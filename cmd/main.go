@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/chiguirez/go-sekeleton/internal/bootstrap"
+	"github.com/chiguirez/go-skeleton/internal/bootstrap"
 	"github.com/chiguirez/snout"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	}
 
 	kernelBootstrap := kernel.Bootstrap(
-		"telemetry-consumer",
+		"go-skeleton",
 		&bootstrap.Config{},
 	)
 
