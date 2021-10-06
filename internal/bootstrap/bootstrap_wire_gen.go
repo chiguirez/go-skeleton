@@ -1,6 +1,5 @@
-//+build wireinject
+// +build !wireinject
 
-//go:generate wire gen -output_file_prefix bootstrap_ .
 package bootstrap
 
 import (
