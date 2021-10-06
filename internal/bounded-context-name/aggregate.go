@@ -1,4 +1,4 @@
-package internal
+package bounded_context_name
 
 //go:generate moq -out event_dispatcher_mock.go . EventDispatcher
 type EventDispatcher interface {
