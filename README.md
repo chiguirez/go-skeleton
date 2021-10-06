@@ -1,8 +1,8 @@
 #### Architectural notes
 * Hexagonal architecture:
     * The root of the internal package is the domain layer. Each aggregate (value objects and entities) could be a different package here
-    * Application layer is formed by the different packages refering to some action or service in each aggregate, like `creator` or `reader` for example.
-        * Commands and query services shoud live here
+    * Application layer is formed by the different packages referring to some action or service in each aggregate, like `creator` or `reader` for example.
+        * Commands and query services should live here
     * Any other package refers to the infrastructure implementation of the domain, like `storage` or `messaging`
     * IO is outside the internal package
 * Dependency injection with [google wire](https://github.com/google/wire)
